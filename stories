@@ -1,4 +1,4 @@
-Show a list of bookmarks
+  Show a list of bookmarks
 Add new bookmarks
 Delete bookmarks
 Update bookmarks
@@ -27,4 +27,14 @@ As a user
 So I can easily summarise page content
 I'd like to be able to comment on specific links
 
+As a user
+So I can view bookmarks of similar content
+I'd like to be able to tag a bookmark
 
+As a user
+So I can search bookmarks easily
+I'd like to be able to filter bookmarks by tag
+
+As a user
+So I can organise and view my bookmarks easily
+I'd like to be able to manage my bookmarks via a central manager
