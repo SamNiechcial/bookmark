@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require_relative 'bookmarks'
 
 class App < Sinatra::Base
 
@@ -9,7 +10,7 @@ class App < Sinatra::Base
       "www.yahoo.com"
     ]
 
-    bookmarks.join
+  erb :index
   end
 
 

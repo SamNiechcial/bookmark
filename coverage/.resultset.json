@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/samniechcial/Documents/Projects/bookmark/spec/features/feature_spec.rb": [
+      "/Users/danielwork/Documents/GitHub/makers/week4/bmark/spec/features/feature_spec.rb": [
         1,
         null,
         1,
@@ -13,10 +13,32 @@
         null,
         null
       ],
-      "/Users/samniechcial/Documents/Projects/bookmark/spec/units/bookmark_spec.rb": [
-
+      "/Users/danielwork/Documents/GitHub/makers/week4/bmark/spec/units/bookmark_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1523281877
+    "timestamp": 1523283420
   }
 }
