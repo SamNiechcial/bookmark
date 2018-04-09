@@ -1,7 +1,22 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/samniechcial/Documents/Projects/bookmark/spec/features/feature_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/samniechcial/Documents/Projects/bookmark/spec/units/bookmark_spec.rb": [
+
+      ]
     },
-    "timestamp": 1523273917
+    "timestamp": 1523281877
   }
 }

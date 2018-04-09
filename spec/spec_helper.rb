@@ -14,4 +14,4 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
 ])
 
 RACK_ENV='test'
-Capybara.app = Bookmark
+Capybara.app = App

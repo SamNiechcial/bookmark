@@ -1,9 +1,15 @@
 require 'sinatra/base'
 
-class Bookmark < Sinatra::Base 
+class App < Sinatra::Base
 
   get '/' do
-    'working'
+    @bookmarks = [
+      "www.google.com",
+      "www.facebook.com",
+      "www.yahoo.com"
+    ]
+
+    bookmarks.join
   end
 
 
