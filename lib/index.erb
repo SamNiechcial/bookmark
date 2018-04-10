@@ -1,6 +1,5 @@
-<html>
-  <h2>
-  <%= @bookmarks.join%>
-  </h2>
-
-</html>
+<ul>
+  <%= @bookmarks.each do |bookmark| %>
+    <li><%= bookmark %></li>
+  <%end%>
+</ul>

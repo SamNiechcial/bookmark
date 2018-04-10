@@ -1,19 +1,15 @@
 require 'sinatra/base'
-require_relative 'bookmarks'
+require './lib/bookmark'
 
-class App < Sinatra::Base
-
+class BookmarkManager < Sinatra::Base
   get '/' do
-    @bookmarks = [
-      "www.google.com",
-      "www.facebook.com",
-      "www.yahoo.com"
-    ]
-
-  erb :index
+    'This is the homepage'
   end
 
+  get '/bookmarks' do
+    @bookmarks = Bookmark.all
+    erb :index
+  end
 
   run if $app_file == 0
-
 end

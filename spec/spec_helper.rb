@@ -1,9 +1,9 @@
+require 'app'
 require 'capybara/rspec'
 require 'capybara'
 require 'rspec'
 require 'simplecov'
 require 'simplecov-console'
-require 'app'
 
 SimpleCov.start
 
@@ -14,4 +14,4 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
 ])
 
 RACK_ENV='test'
-Capybara.app = App
+Capybara.app = BookmarkManager

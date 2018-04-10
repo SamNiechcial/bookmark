@@ -1,23 +1,13 @@
-require 'bookmarks'
+require 'bookmark'
 
-describe 'Bookmarks' do
+describe Bookmark do
+  describe ".all" do
+    it "returns a list of all bookmarks" do
+      bookmarks = Bookmark.all
 
-  let (:bookmarks) {Bookmarks.new}
-
-  describe "#print" do
-
-    it "returns a list of bookmarks" do
-
-      list = [
-        "www.facebook.com",
-        "www.google.com",
-        "www.yahoo.com"
-      ]
-      
-    expect(bookmarks.print).to eq list.join("\n")
-
+      expect(bookmarks).to include("http://www.google.com")
+      expect(bookmarks).to include("http://www.facebook.com")
+      expect(bookmarks).to include("http://www.yahoo.com")
     end
-
   end
-
 end
