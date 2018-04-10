@@ -12,6 +12,12 @@
         1,
         1,
         null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/samniechcial/Documents/Projects/bookmark/spec/units/bookmark_spec.rb": [
@@ -26,10 +32,18 @@
         1,
         1,
         null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
         null,
         null
       ]
     },
-    "timestamp": 1523360230
+    "timestamp": 1523368434
   }
 }
