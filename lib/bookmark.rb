@@ -1,4 +1,5 @@
 require 'pg'
+require 'sinatra/flash'
 
 class Bookmark
 

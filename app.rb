@@ -1,8 +1,14 @@
 require 'pg'
+require 'uri'
 require 'sinatra/base'
+require 'sinatra/flash'
 require './lib/bookmark'
 
 class BookmarkManager < Sinatra::Base
+
+  enable :sessions
+  register Sinatra::Flash
+
   get '/' do
     'This is the homepage'
   end
@@ -17,8 +23,17 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/bookmarks' do
-    Bookmark.create(params)
-    redirect '/bookmarks'
+    if params[:url] !~ /\A#{URI::regexp}\z/
+      flash[:error] = "#{params[:url]} is not a valid URL. Please try again."
+      redirect '/error'
+    else
+      Bookmark.create(params)
+      redirect '/bookmarks'
+    end
+  end
+
+  get '/error' do
+    flash[:error]
   end
 
   run if app_file == $0
