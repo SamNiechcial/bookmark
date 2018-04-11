@@ -16,7 +16,6 @@ class Bookmark
   end
 
   def self.create(params)
-    p params
     connection.exec("INSERT INTO bookmarks (url) VALUES('#{params[:url]}');")
   end
 end

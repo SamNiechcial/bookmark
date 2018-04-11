@@ -3,11 +3,10 @@ require 'pg'
 
 feature 'Loading a page of bookmarks' do
   scenario 'Loading bookmarks page presents user with a list of bookmarks' do
-    connection = PG.connect(dbname: 'bookmark_manager_test')
 
-    connection.exec("INSERT INTO bookmarks VALUES(1, 'http://makersacademy.com');")
-    connection.exec("INSERT INTO bookmarks VALUES(2, 'http://www.google.com');")
-    connection.exec("INSERT INTO bookmarks VALUES(3, 'http://destroyallsoftware.com');")
+    Bookmark.create(url: "http://makersacademy.com")
+    Bookmark.create(url: "http://www.google.com")
+    Bookmark.create(url: "http://destroyallsoftware.com")
 
     visit('/bookmarks')
 

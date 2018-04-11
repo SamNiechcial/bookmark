@@ -9,7 +9,6 @@ class BookmarkManager < Sinatra::Base
 
   get '/bookmarks' do
     @bookmarks = Bookmark.all
-    p @bookmarks
     erb :index
   end
 
@@ -18,7 +17,6 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/bookmarks' do
-    p "Form data submitted to the /bookmarks route!"
     Bookmark.create(params)
     redirect '/bookmarks'
   end

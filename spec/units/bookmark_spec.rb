@@ -4,11 +4,10 @@ require 'pg'
 describe Bookmark do
   describe '.all' do
     it 'returns a list of all bookmarks' do
-      connection = PG.connect(dbname: 'bookmark_manager_test')
 
-      connection.exec("INSERT INTO bookmarks (url) VALUES('http://makersacademy.com');")
-      connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.google.com');")
-      connection.exec("INSERT INTO bookmarks (url) VALUES('http://destroyallsoftware.com');")
+      Bookmark.create(url: "http://makersacademy.com")
+      Bookmark.create(url: "http://www.google.com")
+      Bookmark.create(url: "http://destroyallsoftware.com")
 
       expected_bookmarks = [
         'http://makersacademy.com',
