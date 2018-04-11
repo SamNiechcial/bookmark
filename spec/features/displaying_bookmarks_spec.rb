@@ -1,3 +1,4 @@
+require 'bookmark'
 require 'pg'
 
 feature 'Loading a page of bookmarks' do

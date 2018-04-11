@@ -1,4 +1,5 @@
 require 'bookmark'
+require 'pg'
 
 describe Bookmark do
   describe '.all' do

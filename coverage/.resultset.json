@@ -1,7 +1,21 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/samniechcial/Documents/Projects/bookmark/spec/features/feature_spec.rb": [
+      "/Users/samniechcial/Documents/Projects/bookmark/spec/features/creating_bookmarks_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/samniechcial/Documents/Projects/bookmark/spec/features/displaying_bookmarks_spec.rb": [
+        1,
         1,
         null,
         1,
@@ -21,6 +35,7 @@
         null
       ],
       "/Users/samniechcial/Documents/Projects/bookmark/spec/units/bookmark_spec.rb": [
+        1,
         1,
         null,
         1,
@@ -44,6 +59,6 @@
         null
       ]
     },
-    "timestamp": 1523368434
+    "timestamp": 1523447069
   }
 }
