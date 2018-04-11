@@ -23,17 +23,8 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/bookmarks' do
-    if params[:url] !~ /\A#{URI::regexp}\z/
-      flash[:error] = "#{params[:url]} is not a valid URL. Please try again."
-      redirect '/error'
-    else
-      Bookmark.create(params)
-      redirect '/bookmarks'
-    end
-  end
-
-  get '/error' do
-    flash[:error]
+    flash[:error] = "#{params[:url]} is not a valid URL. Please try again." unless Bookmark.create(params)
+    redirect '/bookmarks'
   end
 
   run if app_file == $0
