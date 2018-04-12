@@ -1,6 +1,6 @@
-#frozen_string_literal: true
+# frozen_string_literal: true
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 ruby '2.5.0'
 
@@ -10,8 +10,8 @@ gem 'pry'
 gem 'rack'
 gem 'rspec'
 gem 'rubocop'
-gem 'sinatra'
-gem 'sinatra/flash'
+gem 'selenium-webdriver'
 gem 'simplecov'
 gem 'simplecov-console'
-gem 'selenium-webdriver'
+gem 'sinatra'
+gem 'sinatra/flash'

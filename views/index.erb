@@ -1,6 +1,6 @@
 <ul>
-    <%= flash[:error] %>
+  <%= flash[:error] %>
   <% @bookmarks.each do |bookmark| %>
-    <li><%= bookmark %></li>
+    <li><%= bookmark.url %> <%= bookmark.title %></li>
   <% end %>
 </ul>

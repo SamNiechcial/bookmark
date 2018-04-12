@@ -2,6 +2,8 @@
   "RSpec": {
     "coverage": {
       "/Users/samniechcial/Documents/Projects/bookmark/spec/features/creating_bookmarks_spec.rb": [
+        null,
+        null,
         1,
         null,
         1,
@@ -15,12 +17,13 @@
         null
       ],
       "/Users/samniechcial/Documents/Projects/bookmark/spec/features/displaying_bookmarks_spec.rb": [
-        1,
-        1,
+        null,
         null,
         1,
         1,
         null,
+        1,
+        1,
         1,
         1,
         1,
@@ -34,6 +37,8 @@
         null
       ],
       "/Users/samniechcial/Documents/Projects/bookmark/spec/features/url_check_spec.rb": [
+        null,
+        null,
         1,
         1,
         1,
@@ -45,10 +50,7 @@
         null
       ],
       "/Users/samniechcial/Documents/Projects/bookmark/spec/units/bookmark_spec.rb": [
-        1,
-        1,
         null,
-        1,
         null,
         1,
         1,
@@ -56,17 +58,26 @@
         1,
         1,
         1,
+        1,
+        1,
         null,
         1,
         null,
         null,
         null,
+        1,
         null,
+        null,
+        null,
+        1,
+        1,
+        1,
         null,
         1,
         null,
         null,
         null,
+        1,
         1,
         1,
         1,
@@ -77,6 +88,6 @@
         null
       ]
     },
-    "timestamp": 1523461535
+    "timestamp": 1523551143
   }
 }
